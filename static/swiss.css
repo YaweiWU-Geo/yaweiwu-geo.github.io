@@ -100,3 +100,19 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
     letter-spacing: .035em;
   }
 }
+@media screen {
+  .identity-row .chinese-name {
+    font-size: clamp(17px, 1.5vw, 22px);
+    font-weight: 600;
+    letter-spacing: .09em;
+    line-height: 1.35;
+    color: #444;
+    white-space: nowrap;
+  }
+  .portrait figcaption [lang="zh"] {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .06em;
+    color: #555;
+  }
+}
