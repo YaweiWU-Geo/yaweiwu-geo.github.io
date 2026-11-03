@@ -56,6 +56,9 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
 @media(max-width:600px){.expertise-feature{grid-template-columns:1fr;gap:14px;margin-top:32px;padding-top:23px}.expertise-feature h3{font-size:25px}.expertise-feature>p{font-size:13px}}
 
 @media screen {
+  html { font-size: 106.25%; }
+  .timeline .timeline-entry .timeline-detail { font-size: 1rem; line-height: 1.55; }
+  .person-link { font-weight: 600; text-decoration: underline; text-underline-offset: .17em; }
   .hero-description, .about-body > p:not(.large-copy), .research-item p,
   .expertise-feature > p, .pub-summary, .timeline p, .timeline p.institution,
   .service p, .contact-section p:not(.eyebrow), .honors li {

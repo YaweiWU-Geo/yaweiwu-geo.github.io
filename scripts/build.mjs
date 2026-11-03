@@ -13,6 +13,17 @@ const authors = value => escape(value).replace(/^Wu, Y\./, '<strong>Wu, Y.</stro
 const external = (href, label, cls='') => `<a ${cls ? `class="${cls}" ` : ''}href="${url(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 
 export function render(content, templates) {
+  function experienceDetail(item) {
+    let remaining = item.detail;
+    let html = '';
+    for (const [name, href] of Object.entries(item.people ?? {}).sort((a, b) => item.detail.indexOf(a[0]) - item.detail.indexOf(b[0]))) {
+      const start = remaining.indexOf(name);
+      if (start < 0) throw new Error('Missing person in experience detail: ' + name);
+      html += escape(remaining.slice(0, start)) + external(href, escape(name), 'person-link');
+      remaining = remaining.slice(start + name.length);
+    }
+    return html + escape(remaining);
+  }
   const {profile: p, publications, experience, about} = content;
   for (const field of ['name','chineseName','role','email','location','website','heroDescription','updated']) {
     if (typeof p?.[field] !== 'string' || !p[field].trim()) throw new Error('Missing profile.'+field);
@@ -39,9 +50,9 @@ export function render(content, templates) {
     WEBSITE:url(p.website), WEBSITE_LABEL:escape(p.website.replace(/^https?:\/\//,'')), HERO_DESCRIPTION:escape(p.heroDescription), UPDATED:escape(p.updated), PUBLICATION_COUNT:String(publications.length),
     ABOUT:about.map((text,i)=>`<p${i===0?' class="large-copy"':''}>${escape(text)}</p>`).join(''),
     PUBLICATIONS:publications.map(x=>`<article class="publication${x.featured?' featured':''}"><div class="pub-year">${x.year}${x.featured?'<span class="featured-label">FEATURED</span>':''}</div><div class="pub-body"><p class="journal">${escape(x.journal)} <span>${escape(x.volume)}</span></p><h3>${external(x.url,escape(x.title))}</h3><p class="authors">${authors(x.authors)}</p>${x.summary?`<p class="pub-summary">${escape(x.summary)}</p>`:''}<div class="pub-links">${external(x.url,'Read paper <span aria-hidden="true">↗</span>')}${x.openAccess?'<span class="open-access">OPEN ACCESS</span>':''}${x.note?`<span class="online-note">${escape(x.note)}</span>`:''}</div></div></article>`).join('\n'),
-    EXPERIENCE:experience.map(x=>`<article class="timeline-entry"><span class="timeline-dot${x.upcoming?' upcoming':''}"></span><div class="timeline-date">${escape(x.date)}${x.status?` <span class="status-pill">${escape(x.status)}</span>`:''}</div><h3>${escape(x.title)}</h3><p class="institution">${escape(x.institution)}</p><p>${escape(x.description)}</p>${x.detail?`<p class="timeline-detail">${escape(x.detail)}</p>`:''}${x.link?external(x.link,escape(x.linkLabel),'inline-link'):''}</article>`).join('\n'),
+    EXPERIENCE:experience.map(x=>`<article class="timeline-entry"><span class="timeline-dot${x.upcoming?' upcoming':''}"></span><div class="timeline-date">${escape(x.date)}${x.status?` <span class="status-pill">${escape(x.status)}</span>`:''}</div><h3>${escape(x.title)}</h3><p class="institution">${escape(x.institution)}</p><p>${escape(x.description)}</p>${x.detail?`<p class="timeline-detail">${experienceDetail(x)}</p>`:''}${x.link?external(x.link,escape(x.linkLabel),'inline-link'):''}</article>`).join('\n'),
     CV_PUBLICATIONS:[...publications].sort((a,b)=>b.year-a.year).map(x=>`<li>${authors(x.authors)} (${x.year}). ${escape(x.title)}. <em>${escape(x.journal)}</em>, ${escape(x.volume)}.${x.note?` <span class="detail">${escape(x.note)}.</span>`:''}<a class="doi" href="${url(x.url)}">${escape(x.url.replace('https://doi.org/','doi:'))}</a></li>`).join('\n'),
-    CV_EXPERIENCE:experience.map(x=>`<article><div class="entry-head"><h3>${escape(x.title)}</h3><span class="date">${escape(x.cvDate)}</span></div><p>${escape(x.institution)}</p><p class="detail">${escape(x.description)}</p>${x.detail?`<p class="detail">${escape(x.detail)}</p>`:''}</article>`).join('\n')
+    CV_EXPERIENCE:experience.map(x=>`<article><div class="entry-head"><h3>${escape(x.title)}</h3><span class="date">${escape(x.cvDate)}</span></div><p>${escape(x.institution)}</p><p class="detail">${escape(x.description)}</p>${x.detail?`<p class="detail supervisor-detail">${experienceDetail(x)}</p>`:''}</article>`).join('\n')
   };
   return Object.fromEntries(Object.entries(templates).map(([name,html])=>[name,html.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>{
     if (!(key in values)) throw new Error('Unknown template field: '+key);
