@@ -2,7 +2,7 @@
 
 Personal academic website for Yawei WU (武亚威), with a printable CV.
 
-Planned address: https://ywu494496-dotcom.github.io
+Website: https://yaweiwu-geo.github.io
 
 ## 日常更新：只改 content.json
 
@@ -24,7 +24,7 @@ JSON 使用英文双引号；文本中的双引号需写为 `\"`。不要在最�
 
 ## 首次发布
 
-1. 在你自己的账号创建公开仓库 `ywu494496-dotcom.github.io`。
+1. 在你自己的账号创建公开仓库 `yaweiwu-geo.github.io`。
 2. 上传此项目全部源码（包括 `.github/workflows/pages.yml`）；不要上传压缩包本身。
 3. 进入 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。
 4. 在 **Actions → Publish academic website → Run workflow** 启动首次部署。以后提交修改会自动部署。
