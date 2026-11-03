@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="{{NAME}} studies structural geology, rock deformation and the mechanics of subduction interfaces. Explore research, publications and academic experience.">
+  <meta property="og:title" content="{{NAME}} — Structural Geology & Rock Deformation">
+  <meta property="og:description" content="From the rock record to the mechanics of a restless Earth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{WEBSITE}}">
+  <title>{{NAME}} — Structural Geology & Rock Deformation</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="swiss.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#top" aria-label="{{NAME}}, home"><span class="monogram">yw<span>·</span></span><span class="wordmark-name">YAWEI WU</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation">Menu <span>+</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#journey">Journey</a><a href="cv.html" target="_blank" rel="noopener">CV</a><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="section-wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ACADEMIC PROFILE <span class="eyebrow-divider">/</span> {{LOCATION_UPPER}}</p>
+          <h1 id="hero-title">{{NAME}}</h1>
+          <div class="identity-row"><p class="fellow-title">{{ROLE}}</p><span class="chinese-name" lang="zh">{{CHINESE_NAME}}</span></div>
+          <h2 class="hero-field">Structural Geology <br>&amp; Rock Deformation</h2>
+          <p class="hero-description">{{HERO_DESCRIPTION}}</p>
+          <div class="hero-actions"><a class="button button-dark" href="#research">Explore research <span aria-hidden="true">↗</span></a><a class="button button-outline" href="cv.html" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <figure class="portrait"><div class="portrait-frame"><img src="assets/yawei-wu-cutout.png" width="1086" height="1448" alt="Portrait of {{NAME}}" fetchpriority="high"></div><figcaption><span>YAWEI WU</span><span lang="zh">{{CHINESE_NAME}}</span></figcaption><p>Field observations. <br>Microstructures. <br>Physical mechanisms.</p></figure>
+      </div>
+      <figure class="subduction-art" aria-label="Original geological line drawing from the selected C design">
+        <svg viewBox="0 460 1586 326" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="subduction-title subduction-desc">
+          <title id="subduction-title">Subduction interface — original C illustration</title><desc id="subduction-desc">The original selected line drawing shows layered rocks and a dark interface curving beneath an overriding mountainous terrain. Conceptual illustration, not to scale.</desc>
+          <defs><clipPath id="original-c-art"><path d="M0 560H700L1000 460H1586V786H0Z"/></clipPath></defs>
+          <image href="assets/style-c-original.png" x="0" y="0" width="1586" height="992" clip-path="url(#original-c-art)"/>
+        </svg>
+      </figure>
+    </section>
+    <div class="affiliation-strip"><div class="section-wrap"><p>AN ACADEMIC JOURNEY</p><span>Peking University <small>×</small> CAGS</span><span>Lyon, France</span><span>Humboldt Fellowship <small>2026</small></span></div></div>
+
+    <section id="about" class="section-wrap split-section">
+      <div class="section-label"><span>01 / ABOUT</span><h2>From outcrops <br>to mechanisms.</h2></div>
+      <div class="about-body">{{ABOUT}}<div class="topic-tags"><span>Subduction zones</span><span>Rock rheology</span><span>Microstructures</span><span>EBSD &amp; MTEX</span><span>Slow slip</span></div></div>
+    </section>
+
+    <section id="research" class="research-section"><div class="section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / RESEARCH</p><h2>Research across scales.</h2></div><p>Connecting field evidence, <br>mineral fabrics and rock mechanics.</p></div>
+      <div class="research-grid">
+        <article class="research-item"><span class="research-number">I.</span><div class="research-icon" aria-hidden="true"><svg viewBox="0 0 100 55"><path d="M0 16Q25 5 48 25T100 48M0 23Q25 12 48 32T100 55M0 9Q25 -2 48 18T100 41M50 12L64 2L78 16L96 12"/></svg></div><h3>Subduction interface <br>mechanics</h3><p>How do strong blocks and a weak matrix share stress? I use exhumed high-pressure rocks to investigate stress heterogeneity, transient coupling and the geological record of slow slip.</p><span class="research-category">FIELD → INTERFACE</span></article>
+        <article class="research-item"><span class="research-number">II.</span><div class="research-icon" aria-hidden="true"><svg viewBox="0 0 100 55"><path d="M5 20L24 3L43 12L40 35L18 43ZM43 12L64 5L78 22L61 40L40 35M78 22L95 15L99 40L79 51L61 40M18 43L25 55M64 5L70 0"/></svg></div><h3>Microstructures <br>& rock rheology</h3><p>What can mineral fabrics reveal about deformation? I use EBSD and MTEX to analyze crystallographic fabrics, grain and subgrain structures, and their implications for rock rheology and deformation mechanisms.</p><span class="research-category">GRAINS → DEFORMATION</span></article>
+        <article class="research-item"><span class="research-number">III.</span><div class="research-icon" aria-hidden="true"><svg viewBox="0 0 100 55"><path d="M5 43L25 23L39 31L63 7L83 16L98 2M5 52L25 32L39 40L63 16L83 25L98 11M3 9H25M75 46H98M19 3L25 9L19 15M81 40L75 46L81 52"/></svg></div><h3>Shear zones <br>& tectonic evolution</h3><p>How does oblique convergence shape an orogen? My work examines strain partitioning, transpression and the tectonic history of the Qilian–Qaidam region in northern Tibet.</p><span class="research-category">STRUCTURES → TECTONICS</span></article>
+      </div>
+      <div class="expertise-feature"><div><p class="eyebrow">CORE EXPERTISE</p><h3>EBSD &amp; MTEX</h3></div><p>I specialize in electron backscatter diffraction (EBSD) and crystallographic analysis with MTEX, using quantitative microstructural data to investigate rock deformation.</p></div>
+      <div class="next-direction"><span class="small-dot"></span><p><strong>Next direction</strong> Linking natural deformation records with experiments on multiphase rocks, material heterogeneity and pore-fluid pressure.</p></div>
+    </div></section>
+
+    <section id="publications" class="section-wrap publication-section">
+      <div class="section-heading"><div><p class="eyebrow">03 / SELECTED PUBLICATIONS</p><h2>Research in print.</h2></div><span class="section-side-note">{{PUBLICATION_COUNT}} selected first-author papers</span></div>
+      {{PUBLICATIONS}}
+      
+      
+    </section>
+
+    <section id="journey" class="journey-section"><div class="section-wrap split-section">
+      <div class="section-label"><span>04 / EDUCATION & EXPERIENCE</span><h2>A journey <br>in Earth science.</h2><p class="journey-note">Research shaped by fieldwork, <br>mentorship and collaboration.</p><a class="text-link" href="cv.html" target="_blank">View academic CV <span aria-hidden="true">↗</span></a></div>
+      <div class="timeline">
+        {{EXPERIENCE}}
+        
+        
+      </div>
+    </div></section>
+
+    <section class="section-wrap recognition-section"><div class="section-heading"><div><p class="eyebrow">05 / RECOGNITION & SERVICE</p><h2>Along the way.</h2></div></div><div class="recognition-grid"><div><h3>Selected honors</h3><ul class="honors"><li><span>Humboldt Research Fellowship for Postdocs</span><small>2026</small></li><li><span>Chinese National Scholarship for Doctoral Students</span><small>2022 · 2025</small></li><li><span>CAGS First-Class Scholarship for Scientific & Technological Innovation</span></li><li><span>Cheng Yuqi Outstanding Dissertation Award</span></li><li><span>Cheng Yuqi Outstanding Graduate Student Award</span></li></ul></div><div class="service"><h3>Academic service</h3><p class="service-title">Journal peer review</p><p>Invited reviewer for <em>Tectonophysics</em>.</p><div class="methods"><h3>Research toolkit</h3><p><strong>Advanced expertise in EBSD &amp; MTEX</strong></p><p>Crystallographic fabrics · Quantitative microstructural analysis · MATLAB · Field structural analysis · Metamorphic petrology</p></div></div></div></section>
+
+    <section id="contact" class="contact-section"><div class="section-wrap contact-inner"><div><p class="eyebrow">06 / CONTACT</p><h2>Good science starts <br>with a <em>conversation.</em></h2><p>For research discussions and academic correspondence.</p></div><div class="contact-links"><a class="email-link" href="mailto:{{EMAIL}}">{{EMAIL}} <span aria-hidden="true">↗</span></a><button id="copy-email">Copy email <span aria-hidden="true">⧉</span></button><a href="https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1266307/dr-yawei-wu" target="_blank" rel="noopener noreferrer">Humboldt Network <span aria-hidden="true">↗</span></a><a href="cv.html" target="_blank">Academic CV <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="section-wrap"><span>© 2026 {{NAME}} <span lang="zh">{{CHINESE_NAME}}</span></span><span>Last updated · {{UPDATED}}</span><a href="#top">Back to top ↑</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

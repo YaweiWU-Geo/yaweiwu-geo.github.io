@@ -1,0 +1,93 @@
+{
+  "profile": {
+    "name": "Yawei Wu",
+    "chineseName": "武亚威",
+    "role": "Humboldt Research Fellow",
+    "email": "wuyawei@pku.edu.cn",
+    "location": "Beijing, China",
+    "website": "https://ywu494496-dotcom.github.io",
+    "heroDescription": "Exploring how rocks deform and what they reveal about subduction interfaces.",
+    "updated": "November 2026"
+  },
+  "about": [
+    "I investigate the connection between the structures we see in rocks and the physical processes operating deep within the Earth.",
+    "My research brings together field structural geology, metamorphic petrology, microstructural analysis and rock rheology. Working on exhumed high-pressure rocks from the North Qilian paleo-subduction interface, I explore how contrasting rock types accommodate stress and strain—and how these records may illuminate transient coupling and deep slow slip.",
+    "My doctoral research was jointly supervised at the Chinese Academy of Geological Sciences and Peking University. A CSC-funded research exchange in Lyon expanded this work through international collaboration. My next research direction connects natural rock records with high-pressure, high-temperature deformation experiments."
+  ],
+  "publications": [
+    {
+      "year": 2025,
+      "featured": true,
+      "journal": "Nature Communications",
+      "volume": "16, 9116",
+      "title": "Stress heterogeneities in exhumed high-pressure rocks shed light on deep subduction interface transient coupling",
+      "url": "https://doi.org/10.1038/s41467-025-64159-7",
+      "authors": "Wu, Y., Angiboust, S., Zhang, J., Zhang, B., Mao, X. & Oncken, O.",
+      "summary": "Natural rock records offer a window into heterogeneous stress and transient mechanical coupling along deep subduction interfaces.",
+      "openAccess": true,
+      "note": ""
+    },
+    {
+      "year": 2026,
+      "featured": false,
+      "journal": "Tectonics",
+      "volume": "45, e2025TC009154",
+      "title": "Triassic Sinistral Transpression of the Overriding Plate in NE Tibet Driven by Oblique Subduction of the Paleo-Tethys",
+      "url": "https://doi.org/10.1029/2025TC009154",
+      "authors": "Wu, Y., Zhang, J., Angiboust, S., Zhang, B., Mao, X. & Teng, X.",
+      "summary": "",
+      "openAccess": false,
+      "note": ""
+    },
+    {
+      "year": 2024,
+      "featured": false,
+      "journal": "GSA Bulletin",
+      "volume": "136, 1889–1915",
+      "title": "Early Paleozoic oblique convergence from subduction to collision: Insights from timing and structural style of the transpressional dextral shear zone in the Qilian orogen, northern Tibet of China",
+      "url": "https://doi.org/10.1130/B36947.1",
+      "authors": "Wu, Y., Zhang, J., Zhang, B., Mao, X., Lu, Z., Zhou, G., Teng, X. & Guo, Q.",
+      "summary": "",
+      "openAccess": false,
+      "note": "First published online in 2023"
+    }
+  ],
+  "experience": [
+    {
+      "date": "2026",
+      "cvDate": "Awarded July 2026",
+      "status": "AWARDED",
+      "upcoming": true,
+      "title": "Humboldt Research Fellowship",
+      "institution": "GFZ Helmholtz Centre for Geosciences · Potsdam, Germany",
+      "description": "Postdoctoral fellowship awarded in July 2026. Research stay planned for December 2026, with a focus on experimental rock deformation and subduction interface mechanics.",
+      "detail": "Host: Dr. Sarah Incel · Collaboration with the group of Onno Oncken",
+      "link": "https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1266307/dr-yawei-wu",
+      "linkLabel": "Humboldt profile ↗"
+    },
+    {
+      "date": "SEP 2022 — JUL 2026",
+      "cvDate": "Sep 2022 – Jul 2026",
+      "status": "",
+      "upcoming": false,
+      "title": "PhD in Structural Geology",
+      "institution": "Chinese Academy of Geological Sciences × Peking University",
+      "description": "Joint doctoral training on stress, deformation and rheological heterogeneity in the North Qilian paleo-subduction interface.",
+      "detail": "Supervisors: Jianxin Zhang & Bo Zhang",
+      "link": "",
+      "linkLabel": ""
+    },
+    {
+      "date": "2024 — 2025",
+      "cvDate": "2024 – 2025",
+      "status": "",
+      "upcoming": false,
+      "title": "Visiting doctoral research",
+      "institution": "Lyon, France",
+      "description": "One-year research exchange supported by the China Scholarship Council, extending work on high-pressure rocks and deformation processes.",
+      "detail": "",
+      "link": "",
+      "linkLabel": ""
+    }
+  ]
+}
