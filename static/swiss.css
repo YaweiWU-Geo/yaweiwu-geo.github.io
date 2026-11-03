@@ -23,7 +23,7 @@ nav{gap:28px}nav a{font-size:12px}nav a.active{color:#111;text-decoration:underl
 .portrait-frame{background:#fff;border:1px solid #e8e8e8;padding:7px}
 .portrait img{width:100%;height:auto;display:block;aspect-ratio:3/4;object-fit:contain}
 .portrait figcaption{display:flex;justify-content:space-between;font-size:8px;letter-spacing:1.7px;margin-top:12px;color:#555}
-.portrait figcaption span[lang]{letter-spacing:3px}.portrait p{font-size:11px;line-height:1.7;color:#777;margin-top:18px}
+.portrait p{font-size:11px;line-height:1.7;color:#777;margin-top:18px}
 .subduction-art{margin:-2px 0 0;overflow:hidden;width:100%;line-height:0}
 .subduction-art svg{display:block;width:100%;height:auto;filter:grayscale(1) brightness(1.15);mix-blend-mode:multiply}
 .affiliation-strip{background:#fff}.affiliation-strip .section-wrap{padding:23px 0}.affiliation-strip span{font-family:var(--display);font-size:16px;font-weight:500;letter-spacing:-.4px}.affiliation-strip small{font-size:9px}
@@ -109,7 +109,8 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
     color: #444;
     white-space: nowrap;
   }
-  .portrait figcaption [lang="zh"] {
+  .portrait figcaption {
+    align-items: baseline;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: .06em;
