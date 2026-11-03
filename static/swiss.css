@@ -44,8 +44,12 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
 @media(min-width:601px) and (max-width:800px){.hero h1{font-size:clamp(58px,10vw,82px)}}
 @media(max-width:600px){.subduction-art svg{width:100%;margin-left:0}}
 .portrait{border-left:0;padding-left:0}
-.portrait-frame{background:transparent;border:0;padding:0}
-.portrait img{mask-image:linear-gradient(to bottom,#000 92%,transparent 100%)}
+.portrait-frame{width:95%;margin-inline:auto;background:transparent;border:0;padding:0}
+.portrait img{
+  filter:blur(clamp(.15px,.025vw,.35px));
+  mask-image:linear-gradient(to bottom,#000 80%,rgba(0,0,0,.85) 86%,rgba(0,0,0,.3) 95%,transparent),linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);
+  mask-composite:intersect;
+}
 .portrait figcaption{padding-top:4px}
 
 .expertise-feature{display:grid;grid-template-columns:1fr 2fr;gap:40px;border-top:1px solid #d9d9d9;margin-top:44px;padding-top:28px;align-items:start}.expertise-feature .eyebrow{font-size:9px;color:#696969;margin-bottom:8px}.expertise-feature h3{font-size:26px;font-weight:700;letter-spacing:-.7px}.expertise-feature>p{font-size:14px;line-height:1.8;color:#626262;max-width:650px}.methods strong{color:#303030;font-weight:650}.methods p+p{margin-top:8px}
