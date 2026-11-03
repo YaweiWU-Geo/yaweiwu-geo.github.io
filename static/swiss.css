@@ -90,3 +90,12 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
 }
 
 .affiliation-strip p { font-size: 1rem; font-weight: 600; letter-spacing: .025em; text-transform: none; line-height: 1.35; }
+
+@media screen and (min-width: 801px) {
+  .hero .eyebrow, .section-label > span, .section-heading .eyebrow,
+  .expertise-feature .eyebrow, .contact-section .eyebrow {
+    font-size: 1.375rem;
+    line-height: 1.35;
+    letter-spacing: .035em;
+  }
+}
