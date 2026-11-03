@@ -2,7 +2,7 @@
 
 Personal academic website for Yawei WU (武亚威), with a printable CV.
 
-Website: https://yaweiwu-geo.github.io
+Website: https://wuyawei.me
 
 ## 日常更新：只改 content.json
 
