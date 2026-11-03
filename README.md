@@ -1,6 +1,6 @@
-# Yawei Wu — Academic website
+# Yawei WU — Academic website
 
-Personal academic website for Yawei Wu (武亚威), with a printable CV.
+Personal academic website for Yawei WU (武亚威), with a printable CV.
 
 Planned address: https://ywu494496-dotcom.github.io
 
