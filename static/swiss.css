@@ -110,8 +110,9 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
     white-space: nowrap;
   }
   .portrait figcaption {
-    align-items: baseline;
-    font-size: 1rem;
+    display: block;
+    text-align: right;
+    font-size: .8rem;
     font-weight: 500;
     letter-spacing: .06em;
     color: #555;
