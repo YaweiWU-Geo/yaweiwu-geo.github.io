@@ -101,16 +101,5 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
   }
 }
 @media screen and (min-width: 801px) {
-  .hero { isolation: isolate; }
-  .hero .subduction-art {
-    position: relative;
-    z-index: 0;
-    margin-top: clamp(-215px, -13vw, -145px);
-    pointer-events: none;
-    mask-image: linear-gradient(to bottom, transparent, #0008 23%, #000 68%);
-  }
-  .portrait figcaption, .portrait p {
-    color: #454545; text-shadow: 0 0 3px #fafafa, 0 0 6px #fafafa;
-  }
-  .hero-actions .button-outline { background-color: #fafafa; }
+  .hero .subduction-art { margin-top: 8px; }
 }
