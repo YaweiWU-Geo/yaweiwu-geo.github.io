@@ -26,6 +26,15 @@ export function render(content, templates) {
   }
   for (const item of experience) for (const key of ['date','cvDate','title','institution','description']) if (!item[key]) throw new Error('Experience missing '+key);
   const values = {
+    PROFILE_SCHEMA:JSON.stringify({
+      '@context':'https://schema.org', '@type':'ProfilePage', url:p.website+'/',
+      mainEntity:{
+        '@type':'Person', '@id':p.website+'/#person', name:p.name, alternateName:p.chineseName,
+        jobTitle:p.role, url:p.website+'/', image:p.website+'/assets/yawei-wu-cutout.png',
+        sameAs:['https://orcid.org/0009-0003-6981-3579','https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1266307/dr-yawei-wu'],
+        knowsAbout:['Structural geology','Rock deformation','Subduction interfaces','EBSD','MTEX']
+      }
+    }).replaceAll('<','\\u003c'),
     NAME:escape(p.name), CHINESE_NAME:escape(p.chineseName), ROLE:escape(p.role), EMAIL:escape(p.email), LOCATION:escape(p.location), LOCATION_UPPER:escape(p.location.toUpperCase()),
     WEBSITE:url(p.website), WEBSITE_LABEL:escape(p.website.replace(/^https?:\/\//,'')), HERO_DESCRIPTION:escape(p.heroDescription), UPDATED:escape(p.updated), PUBLICATION_COUNT:String(publications.length),
     ABOUT:about.map((text,i)=>`<p${i===0?' class="large-copy"':''}>${escape(text)}</p>`).join(''),
