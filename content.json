@@ -12,7 +12,7 @@
   "about": [
     "I investigate the connection between the structures we see in rocks and the physical processes operating deep within the Earth.",
     "My research brings together field structural geology, metamorphic petrology, microstructural analysis and rock rheology. Working on exhumed high-pressure rocks from the North Qilian paleo-subduction interface, I explore how contrasting rock types accommodate stress and strain—and how these records may illuminate transient coupling and deep slow slip.",
-    "My doctoral research was jointly supervised at the Chinese Academy of Geological Sciences and Peking University. A CSC-funded research exchange in Lyon expanded this work through international collaboration. My next research direction connects natural rock records with high-pressure, high-temperature deformation experiments."
+    "My doctoral research was jointly supervised at Peking University and the Chinese Academy of Geological Sciences. A CSC-funded research exchange in Lyon expanded this work through international collaboration. My next research direction connects natural rock records with high-pressure, high-temperature deformation experiments."
   ],
   "publications": [
     {
@@ -71,7 +71,7 @@
       "status": "",
       "upcoming": false,
       "title": "PhD in Structural Geology",
-      "institution": "Chinese Academy of Geological Sciences × Peking University",
+      "institution": "Peking University × Chinese Academy of Geological Sciences",
       "description": "Joint doctoral training on stress, deformation and rheological heterogeneity in the North Qilian paleo-subduction interface.",
       "detail": "Supervisors: Jianxin Zhang & Bo Zhang",
       "link": "",
@@ -85,7 +85,7 @@
       "title": "Visiting doctoral research",
       "institution": "Lyon, France",
       "description": "One-year research exchange supported by the China Scholarship Council, extending work on high-pressure rocks and deformation processes.",
-      "detail": "",
+      "detail": "Supervisor: Samuel Angiboust",
       "link": "",
       "linkLabel": ""
     }
