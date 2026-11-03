@@ -100,6 +100,3 @@ dialog{background:#fff;box-shadow:0 24px 100px #0002}dialog::backdrop{background
     letter-spacing: .035em;
   }
 }
-@media screen and (min-width: 801px) {
-  .hero .subduction-art { margin-top: 8px; }
-}
