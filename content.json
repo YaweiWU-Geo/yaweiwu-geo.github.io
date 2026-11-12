@@ -63,7 +63,9 @@
       "description": "Postdoctoral research at Peking University as a Boya Postdoctoral Fellow.",
       "detail": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "titleZh": "博雅博士后",
+      "institutionZh": "北京大学 · 中国北京"
     },
     {
       "date": "2026",
@@ -79,7 +81,9 @@
         "Onno Oncken": "https://www.researchgate.net/profile/Onno-Oncken-2"
       },
       "link": "https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1266307/dr-yawei-wu",
-      "linkLabel": "Humboldt profile ↗"
+      "linkLabel": "Humboldt profile ↗",
+      "titleZh": "洪堡博士后研究奖学金",
+      "institutionZh": "德国亥姆霍兹地学研究中心（GFZ）· 德国波茨坦"
     },
     {
       "date": "SEP 2022 — JUL 2026",
@@ -95,7 +99,9 @@
         "Bo Zhang": "https://www.researchgate.net/profile/Bo-Zhang-5"
       },
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "titleZh": "构造地质学博士",
+      "institutionZh": "北京大学与中国地质科学院联合培养 · 中国北京"
     },
     {
       "date": "2024 — 2025",
@@ -110,7 +116,9 @@
         "Samuel Angiboust": "https://www.researchgate.net/profile/Samuel-Angiboust"
       },
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "titleZh": "博士生联合培养",
+      "institutionZh": "法国里昂高等师范学院 · 法国里昂"
     }
   ]
 }
